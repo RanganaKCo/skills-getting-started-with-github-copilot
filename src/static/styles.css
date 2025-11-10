@@ -7,7 +7,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
+  line-height: 2.5;
   color: #333;
   max-width: 1200px;
   margin: 0 auto;
@@ -86,9 +86,11 @@ section h3 {
 
 /* Bulleted list styling */
 .participants-list {
-  list-style: disc;
-  margin: 0;
-  padding-left: 20px;
+  list-style: disc inside;
+  margin: 8px 0;
+  padding: 8px;
+  background: #f7f9fc;
+  border-radius: 6px;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -99,11 +101,13 @@ section h3 {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 6px 8px;
+  padding: 4px 0;
   border-radius: 6px;
   background-color: rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(0, 0, 0, 0.03);
   transition: background-color 0.15s, transform 0.08s;
+  color: #222;
+  font-size: 0.95rem;
 }
 
 .participant:hover {
