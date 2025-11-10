@@ -65,13 +65,88 @@ section h3 {
   background-color: #f9f9f9;
 }
 
-.activity-card h4 {
-  margin-bottom: 10px;
-  color: #0066cc;
+/* Participants section inside activity cards */
+.participants {
+  margin-top: 12px;
+  padding: 10px;
+  background: linear-gradient(180deg, rgba(26, 35, 126, 0.03), rgba(26, 35, 126, 0.01));
+  border-radius: 6px;
+  border: 1px solid rgba(26, 35, 126, 0.05);
 }
 
-.activity-card p {
+.participants-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a237e;
   margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Bulleted list styling */
+.participants-list {
+  list-style: disc;
+  margin: 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Individual participant row */
+.participant {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  transition: background-color 0.15s, transform 0.08s;
+}
+
+.participant:hover {
+  background-color: rgba(245, 246, 250, 0.9);
+  transform: translateY(-1px);
+}
+
+/* Optional avatar image */
+.participant-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex: 0 0 28px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  background-color: #fff;
+}
+
+/* Participant name and meta */
+.participant-name {
+  font-size: 14px;
+  color: #12417a;
+  font-weight: 600;
+}
+
+.participant-meta {
+  margin-left: auto;
+  font-size: 12px;
+  color: #666;
+  opacity: 0.9;
+}
+
+/* Small screens: make list compact */
+@media (max-width: 480px) {
+  .participant-name {
+    font-size: 13px;
+  }
+
+  .participant-avatar {
+    width: 24px;
+    height: 24px;
+    flex: 0 0 24px;
+  }
 }
 
 .form-group {
